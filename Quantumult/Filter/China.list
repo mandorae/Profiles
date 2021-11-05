@@ -1,6 +1,5 @@
 # China Area Network
 # > Alibaba
-USER-AGENT,%E4%BC%98%E9%85%B7*,DIRECT
 DOMAIN-SUFFIX,alibaba.com,DIRECT
 DOMAIN-SUFFIX,alibabausercontent.com,DIRECT
 DOMAIN-SUFFIX,alicdn.com,DIRECT
@@ -19,18 +18,18 @@ DOMAIN-SUFFIX,youku.com,DIRECT
 DOMAIN-SUFFIX,xiami.com,DIRECT
 DOMAIN-SUFFIX,xiami.net,DIRECT
 # > Apple
-#DOMAIN-SUFFIX,aaplimg.com,DIRECT
-#DOMAIN-SUFFIX,apple.co,DIRECT
-#DOMAIN-SUFFIX,apple.com,DIRECT
-#DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
-#DOMAIN-SUFFIX,appstore.com,DIRECT
-#DOMAIN-SUFFIX,cdn-apple.com,DIRECT
-#DOMAIN-SUFFIX,icloud.com,DIRECT
-#DOMAIN-SUFFIX,icloud-content.com,DIRECT
-#DOMAIN-SUFFIX,me.com,DIRECT
-#DOMAIN-SUFFIX,mzstatic.com,DIRECT
-# DOMAIN-KEYWORD,apple.com.akadns.net,DIRECT
-# DOMAIN-KEYWORD,icloud.com.akadns.net,DIRECT
+DOMAIN-SUFFIX,aaplimg.com,PROXY
+DOMAIN-SUFFIX,apple.co,PROXY
+DOMAIN-SUFFIX,apple.com,PROXY
+DOMAIN-SUFFIX,apple-cloudkit.com,PROXY
+DOMAIN-SUFFIX,appstore.com,PROXY
+DOMAIN-SUFFIX,cdn-apple.com,PROXY
+DOMAIN-SUFFIX,icloud.com,PROXY
+DOMAIN-SUFFIX,icloud-content.com,PROXY
+DOMAIN-SUFFIX,me.com,PROXY
+DOMAIN-SUFFIX,mzstatic.com,PROXY
+# DOMAIN-KEYWORD,apple.com.akadns.net,PROXY
+# DOMAIN-KEYWORD,icloud.com.akadns.net,PROXY
 # > Baidu
 DOMAIN-SUFFIX,baidu.com,DIRECT
 DOMAIN-SUFFIX,baidubcr.com,DIRECT
@@ -39,9 +38,6 @@ DOMAIN-SUFFIX,baidupcs.com,DIRECT
 DOMAIN-SUFFIX,bdimg.com,DIRECT
 DOMAIN-SUFFIX,bdstatic.com,DIRECT
 DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
-# > Battle
-DOMAIN-SUFFIX,battle.net,DIRECT
-DOMAIN-SUFFIX,blizzard.com,DIRECT
 # > bilibili
 DOMAIN-SUFFIX,acgvideo.com,DIRECT
 DOMAIN-SUFFIX,biliapi.com,DIRECT
@@ -59,6 +55,9 @@ DOMAIN-SUFFIX,21cn.com,DIRECT
 DOMAIN-SUFFIX,didialift.com,DIRECT
 DOMAIN-SUFFIX,didiglobal.com,DIRECT
 DOMAIN-SUFFIX,udache.com,DIRECT
+# > HunanTV
+DOMAIN-SUFFIX,hitv.com,DIRECT
+DOMAIN-SUFFIX,mgtv.com,DIRECT
 # > iQiyi
 DOMAIN-SUFFIX,iqiyi.com,DIRECT
 DOMAIN-SUFFIX,iqiyipic.com,DIRECT
@@ -76,41 +75,33 @@ DOMAIN-SUFFIX,dianping.com,DIRECT
 DOMAIN-SUFFIX,dpfile.com,DIRECT
 DOMAIN-SUFFIX,meituan.com,DIRECT
 DOMAIN-SUFFIX,meituan.net,DIRECT
-# > MI
-DOMAIN-SUFFIX,duokan.com,DIRECT
-DOMAIN-SUFFIX,mi.com,DIRECT
-DOMAIN-SUFFIX,mi-img.com,DIRECT
-DOMAIN-SUFFIX,miui.com,DIRECT
-DOMAIN-SUFFIX,miwifi.com,DIRECT
-DOMAIN-SUFFIX,xiaomi.com,DIRECT
-DOMAIN-SUFFIX,xiaomi.net,DIRECT
 # > Microsoft
-# DOMAIN-SUFFIX,microsoft.com,DIRECT
-# DOMAIN-SUFFIX,msecnd.net,DIRECT
-# DOMAIN-SUFFIX,office.com,DIRECT
-# DOMAIN-SUFFIX,office365.com,DIRECT
-# DOMAIN-SUFFIX,s-microsoft.com,DIRECT
-# DOMAIN-SUFFIX,windows.com,DIRECT
-# DOMAIN-SUFFIX,visualstudio.com,DIRECT
+DOMAIN-SUFFIX,microsoft.com,PROXY
+DOMAIN-SUFFIX,msecnd.net,PROXY
+DOMAIN-SUFFIX,office.com,PROXY
+DOMAIN-SUFFIX,office365.com,PROXY
+DOMAIN-SUFFIX,s-microsoft.com,PROXY
+DOMAIN-SUFFIX,windows.com,PROXY
+DOMAIN-SUFFIX,visualstudio.com,PROXY
 # >> Microsoft Software Download
-# DOMAIN,software-download.microsoft.com,DIRECT
-# DOMAIN-KEYWORD,-microsoft-com.akamaized.net,DIRECT
+DOMAIN,software-download.microsoft.com,PROXY
+DOMAIN-KEYWORD,-microsoft-com.akamaized.net,PROXY
 # >> OneDrive
 # DOMAIN-SUFFIX,1drv.com,DIRECT
 # DOMAIN-SUFFIX,storage.live.com,DIRECT
 # >> Outlook
-#DOMAIN-SUFFIX,hotmail.com,DIRECT
-#DOMAIN-SUFFIX,outlook.com,DIRECT
-#DOMAIN,outlook.office365.com,DIRECT
-#DOMAIN,smtp.office365.com,DIRECT
+DOMAIN-SUFFIX,hotmail.com,PROXY
+DOMAIN-SUFFIX,outlook.com,PROXY
+DOMAIN,outlook.office365.com,PROXY
+DOMAIN,smtp.office365.com,PROXY
 # >> Windows Server Update Services
-#DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com,DIRECT
-#DOMAIN-SUFFIX,update.microsoft.com,DIRECT
-#DOMAIN-SUFFIX,windowsupdate.com,DIRECT
-#DOMAIN-SUFFIX,windowsupdate.microsoft.com,DIRECT
-#DOMAIN,download.microsoft.com,DIRECT
-#DOMAIN,wustat.windows.com,DIRECT
-#DOMAIN,ntservicepack.microsoft.com,DIRECT
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com,PROXY
+DOMAIN-SUFFIX,update.microsoft.com,PROXY
+DOMAIN-SUFFIX,windowsupdate.com,PROXY
+DOMAIN-SUFFIX,windowsupdate.microsoft.com,PROXY
+DOMAIN,download.microsoft.com,PROXY
+DOMAIN,wustat.windows.com,PROXY
+DOMAIN,ntservicepack.microsoft.com,PROXY
 # > NetEase
 DOMAIN-SUFFIX,163.com,DIRECT
 DOMAIN-SUFFIX,126.com,DIRECT
@@ -121,6 +112,11 @@ DOMAIN-SUFFIX,lofter.com,DIRECT
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-SUFFIX,ydstatic.com,DIRECT
 DOMAIN-SUFFIX,youdao.com,DIRECT
+# > PayPal
+USER-AGENT,PayPal*,PROXY
+DOMAIN-SUFFIX,paypal.com,PROXY
+DOMAIN-SUFFIX,paypal.me,PROXY
+DOMAIN-SUFFIX,paypalobjects.com,PROXY
 # > Sina
 DOMAIN-SUFFIX,sina.com,DIRECT
 DOMAIN-SUFFIX,weibo.com,DIRECT
@@ -134,6 +130,10 @@ DOMAIN-SUFFIX,v-56.com,DIRECT
 DOMAIN-SUFFIX,sogo.com,DIRECT
 DOMAIN-SUFFIX,sogou.com,DIRECT
 DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+# > Steam
+DOMAIN-SUFFIX,steamcontent.com,PROXY
+DOMAIN-SUFFIX,steampowered.com,PROXY
+DOMAIN-SUFFIX,steamstatic.com,PROXY
 # > Tencent
 DOMAIN-SUFFIX,gtimg.com,DIRECT
 DOMAIN-SUFFIX,idqqimg.com,DIRECT
@@ -328,6 +328,5 @@ DOMAIN-SUFFIX,zhihu.com,DIRECT
 DOMAIN-SUFFIX,zhihuishu.com,DIRECT
 DOMAIN-SUFFIX,zhimg.com,DIRECT
 DOMAIN-SUFFIX,zhuihd.com,DIRECT
-
 DOMAIN,download.jetbrains.com,DIRECT
 DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
